@@ -93,10 +93,25 @@ footer {
         top: 0;
         left: 0;
         z-index: -1;
-        
+
         scale: 0;
         transition: scale 200ms;
       }
+    }
+  }
+}
+
+@media (width <=50em) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 1.5rem 1.5rem;
+    gap: 3rem;
+
+    & nav {
+      flex-direction: column;
+      gap: 2rem;
     }
   }
 }

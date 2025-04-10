@@ -7,6 +7,8 @@ section.gallery {
 
   & header {
     text-align: center;
+    display: grid;
+    gap: 1rem;
   }
 
   /* * font do span */
@@ -121,5 +123,24 @@ section.gallery {
   from {
     opacity: 0;
     transform: translateY(100%);
+  }
+}
+
+@media (width <=50em) {
+  section.gallery {
+    & header {
+      & h2 {
+        font-size: 1.5rem;
+      }
+
+      & span {
+        font-size: 0.75rem;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
